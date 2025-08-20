@@ -24,9 +24,9 @@ export default function BioCard() {
       </div>
 
       {/* Card Content */}
-      <div className="mt-14 lg:mt-0 flex flex-col gap-6">
+      <div className="mt-14  lg:mt-0 flex flex-col gap-6">
         {/* Name + Title */}
-        <div className="text-center mt-5">
+        <div className="text-center mt-5 sm:mt-10 lg:mt-5">
           <h2 className="font-display text-2xl font-bold">Tahmidul Ambia</h2>
           <div className="flex items-center justify-center gap-2 text-sm sm:text-base text-text mt-1">
             <LuMapPin size={16} />

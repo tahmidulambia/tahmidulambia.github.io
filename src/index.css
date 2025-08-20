@@ -31,4 +31,13 @@
 html {
   scroll-behavior: smooth;
 }
-/* tailwind components, material twind, flowbite */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+

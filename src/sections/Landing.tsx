@@ -25,7 +25,7 @@ export default function Landing() {
 
         {/* Text + CTAs */}
         <div className="text-center lg:text-left lg:order-1">
-          <p className="font-body font-[600] text-accent text-base sm:text-2xl mb-6">
+          <p className="font-body font-[600] text-accent text-base sm:text-2xl mb-3">
             Hello,
           </p>
 
@@ -44,7 +44,7 @@ export default function Landing() {
             across the stack and exploring how artificial intelligence can solve real problems.
           </p>
 
-          {/* CTAs: row on all sizes; scale paddings + font on xl/2xl */}
+          {/* CTAs*/}
           <div className="mt-8 flex flex-row gap-3 justify-center lg:justify-start">
             <a
               href="#about"

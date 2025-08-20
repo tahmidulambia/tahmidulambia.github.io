@@ -12,16 +12,15 @@ const Navbar = () => {
         return { id: link.toLowerCase(), offsetTop: el.offsetTop };
       });
 
-      const scrollPos = window.scrollY + 100; // account for navbar height
+      const scrollPos = window.scrollY + 100; 
       const current = sections.reverse().find((s) => scrollPos >= s.offsetTop);
       if (current) setActive(current.id);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, []); 
 
-  // Placeholder click handler — we'll wire this up to a slide-in panel next
   const openMobileMenu = () => {
     // TODO: open right-side panel
     console.log("open mobile menu");
@@ -35,7 +34,7 @@ const Navbar = () => {
           Tahmidul 
         </h1>
 
-        {/* Mobile hamburger (shown by default, hidden on lg+) */}
+        {/* Mobile hamburger */}
         <button
           type="button"
           onClick={openMobileMenu}
@@ -43,7 +42,7 @@ const Navbar = () => {
           aria-label="Open menu"
           aria-expanded="false"
         >
-          {/* Inline SVG hamburger icon (inherits currentColor) */}
+          {/* icon */}
           <svg
             className="h-6 w-6"
             viewBox="0 0 24 24"
@@ -56,7 +55,7 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Desktop links (hidden by default, shown on lg+) */}
+        {/* Desktop links */}
         <ul className="hidden lg:flex space-x-10 font-body font-[300] text-xl tracking-wide">
           {links.map((link) => {
             const id = link.toLowerCase();
