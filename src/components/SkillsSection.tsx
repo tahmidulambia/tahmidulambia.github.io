@@ -23,7 +23,7 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section className="bg-nav-bg/60 rounded-2xl border 
+    <section className="bg-bg rounded-2xl border 
                         border-text/15 
                         p-6 sm:p-8 w-full mx-auto max-w-2xl lg:mx-0 lg:max-w-none xl:max-h-[384px] ">
       {/* Section title */}

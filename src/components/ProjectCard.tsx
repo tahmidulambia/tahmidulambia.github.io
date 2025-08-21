@@ -1,5 +1,5 @@
 // src/components/ProjectCard.tsx
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaBroadcastTower} from "react-icons/fa";
 
 type ProjectCardProps = {
   image: string;
@@ -13,14 +13,14 @@ type ProjectCardProps = {
 export default function ProjectCard({ image, title, description, technologies, demoLink, codeLink }: ProjectCardProps) {
   return (
     <div
-        className="flex flex-col bg-nav-bg/60 rounded-2xl border border-text/15
+        className="flex flex-col bg-bg/60 rounded-2xl border border-text/15
              shadow-md transition-transform duration-300 ease-in-out
              hover:scale-[1.03] hover:shadow-lg cursor-pointer lg:hover:scale-105
              w-full max-w-sm sm:max-w-lg md:max-w-2xl h-full min-h-[28rem]"
                  
     >
       {/* Project image */}
-      <div className="relative h-50 sm:h-60 md:h-70 w-full">
+      <div className="relative h-50 sm:h-60 md:h-70 w-full b">
         <img src={image} alt={title} className="object-cover w-full h-full" />
       </div>
   <div className="flex flex-col flex-1 p-4">
@@ -51,23 +51,32 @@ export default function ProjectCard({ image, title, description, technologies, d
           href={codeLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 lg:py-3 rounded-md border border-accent text-accent
+          className="px-4 py-2 lg:py-3 rounded-md border border-white/55 text-white
                      hover:bg-accent hover:text-bg transition-colors font-body text-sm flex items-center gap-2"
         >
-          <span className="hidden md:block">Live</span> Demo
+          <FaBroadcastTower size={16} />
+          <span>
+           <span className="hidden md:inline">Live</span> Demo
+          </span>
         </a>
         <a
           href={demoLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 lg:py-3 rounded-md border border-accent text-accent
+          className="ml-1 px-4 py-2 lg:py-3 rounded-md border border-accent/75 text-white
                      hover:bg-accent hover:text-bg transition-colors font-body text-sm flex items-center gap-2"
         >
           <FaGithub size={16} />
-          <span className="hidden md:block">Source</span>Code
+          <span>
+
+            <span className="hidden md:inline">Source</span> Code
+          </span>
           </a>
         </div>
       </div>
     </div>
   );
 }
+
+
+

@@ -1,15 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 @import "tailwindcss";
+
 
 @theme {
   --font-display: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
+  --font-brand: "Playfair Display", sans-serif;
+
 
   /* Light mode colors */
   --color-bg: oklch(1 0 0);        
   --color-bg-light: hsl(227, 35%, 21%);
   --color-text: oklch(0.1 0 0);      
-  --color-text-secondary: oklch(23.075% 0.00003 271.152)	; 
-  --color-nav-bg: oklch(0.98 0 0);   
   --color-accent: oklch(0.75 0.2 65);
   --color-hover: oklch(0.8 0.25 75); 
 }
@@ -17,16 +21,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Dark mode colors */
-    --color-bg: oklch(20.407% 0.03071 272.045);     
-    --color-text: oklch(1 0 0);
-    --color-text-secondary: oklch(96.444% 0.00143 285.229)	; 
-    --color-nav-bg: oklch(20.407% 0.03071 272.045); 
-    --color-accent: oklch(0.7278 0.1431 66.89);   
-    --color-hover: oklch(0.8 0.25 75);
-    --color-bg-light: hsl(227, 35%, 20%);
+    /* Dark mode colors from UI kit */
+    --color-bg: hsl(0, 0%, 7%);        /* main background */
+    --color-text: hsl(0, 0%, 100%);      /* text stays white */
+    --color-accent: hsl(32, 93%, 50%);    /* main accent orange */
+    --color-hover: hsl(27, 93%, 50%);     /* hover accent */
+    --color-bg-light: hsl(0, 0%, 15%);  /* lighter gray for cards/sections */
   }
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -40,4 +43,6 @@ html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+
 

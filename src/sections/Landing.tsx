@@ -44,7 +44,7 @@ export default function Landing() {
             across the stack and exploring how artificial intelligence can solve real problems.
           </p>
 
-          {/* CTAs*/}
+          {/* CTAs: row on all sizes; scale paddings + font on xl/2xl */}
           <div className="mt-8 flex flex-row gap-3 justify-center lg:justify-start">
             <a
               href="#about"
@@ -63,7 +63,7 @@ export default function Landing() {
                          px-5 py-3 text-base
                          xl:px-6 xl:py-3.5 xl:text-lg
                          2xl:px-7 2xl:py-4 2xl:text-xl
-                         border border-accent text-accent hover:text-bg hover:bg-accent/90 transition-colors"
+                         border border-accent text-accent hover:text-white hover:bg-hover transition-colors"
             >
               View Projects
             </a>

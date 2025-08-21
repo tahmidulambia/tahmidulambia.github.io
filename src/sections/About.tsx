@@ -25,7 +25,7 @@ export default function About() {
           <div className="flex flex-col justify-between gap-8 items-center lg:items-stretch ">
             
             {/* About Me section */}
-            <article className="bg-nav-bg/80 backdrop-blur-sm ">
+            <article className="bg-bg/80 backdrop-blur-sm ">
               <h2 className="font-display text-center font-bold text-2xl sm:text-3xl lg:text-4xl mb-4 mt-6 lg:mt-2 lg:text-start">
                 About Me
               </h2>
