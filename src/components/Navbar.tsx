@@ -135,7 +135,7 @@ const Navbar = () => {
           className="hidden lg:flex px-5 py-2 rounded-md font-body text-lg text-white
                      bg-gradient-to-r from-[#FF6F0F] via-[#E44800] to-[#E27A2B]
                      bg-[length:200%_200%]
-                     hover:scale-105 hover:shadow-lg
+                     hover:scale-115 hover:shadow-lg
                      transition-all duration-300 ease-in-out
                      items-center gap-2"
           animate={{

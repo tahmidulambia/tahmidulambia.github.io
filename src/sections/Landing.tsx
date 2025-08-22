@@ -40,9 +40,8 @@ export default function Landing() {
           <p className="font-body mt-10 opacity-80
                          text-sm sm:text-base xl:text-lg 2xl:text-xl
                          max-w-prose xl:max-w-[65ch] mx-auto lg:mx-0">
-            I’m passionate about creating reliable, impactful, and innovative software 
-            across the stack and exploring how artificial intelligence can solve real problems.
-          </p>
+            I build reliable and impactful AI powered software across the stack. 
+            If you're looking to hire a self-starter with a strong classical foundation, explore more below!          </p>
 
           {/* CTAs: row on all sizes; scale paddings + font on xl/2xl */}
           <div className="mt-8 flex flex-row gap-3 justify-center lg:justify-start">
