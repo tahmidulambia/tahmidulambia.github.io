@@ -1,7 +1,4 @@
-type ShimmerPillProps = {
-  text: string;
-  className?: string; // extra styles
-};
+import type { ShimmerPillProps } from "../types";
 
 export default function ShimmerPill({ text, className }: ShimmerPillProps) {
   return (

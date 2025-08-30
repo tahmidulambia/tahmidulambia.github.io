@@ -4,13 +4,16 @@ import { LuDownload } from "react-icons/lu";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+  // Navigation links
   const links = ["Home", "About", "Projects"];
+  
+  // State management
   const [active, setActive] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLUListElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
-  // Typing effect state
+  // Typing effect for brand name
   const fullBrand = "Tahmidul";
   const [brandText, setBrandText] = useState("");
 
@@ -41,7 +44,7 @@ const Navbar = () => {
       if (typingInterval) clearInterval(typingInterval);
       if (resetTimeout) clearTimeout(resetTimeout);
     };
-  }, [fullBrand]);
+  }, []); // Remove fullBrand dependency since it's constant
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -86,7 +89,7 @@ const Navbar = () => {
   }, [menuOpen, links]);
 
   return (
-    <nav className="w-full fixed top-0 z-50 bg-bg text-text">
+    <nav className="w-full fixed top-0 z-50 bg-gradient-to-b from-bg to-[hsl(0,0%,5%)/80] backdrop-blur-md text-text">
       <div className="max-w-screen-2xl mx-auto px-8 py-8 flex items-center justify-between">
         {/* Left → Nav links (hidden on mobile, shown on desktop) */}
         <ul className="hidden lg:flex space-x-10 font-body font-[300] text-xl tracking-wide">
@@ -133,18 +136,27 @@ const Navbar = () => {
           href="/resume.pdf"
           download
           className="hidden lg:flex px-5 py-2 rounded-md font-body text-lg text-white
-                     bg-gradient-to-r from-[#FF6F0F] via-[#E44800] to-[#E27A2B]
-                     bg-[length:200%_200%]
-                     hover:scale-115 hover:shadow-lg
+                     bg-gradient-to-r from-orange-500 via-orange-600 to-orange-400
+                     bg-[length:300%_100%]
+                     hover:scale-110 hover:shadow-lg hover:shadow-orange-500/25
                      transition-all duration-300 ease-in-out
-                     items-center gap-2"
+                     items-center gap-2 relative overflow-hidden"
           animate={{
             backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+            boxShadow: [
+              "0 4px 15px rgba(255, 140, 0, 0.2)",
+              "0 8px 25px rgba(255, 140, 0, 0.4)",
+              "0 4px 15px rgba(255, 140, 0, 0.2)"
+            ]
           }}
           transition={{
-            duration: 6,
-            ease: "linear",
+            duration: 3,
+            ease: "easeInOut",
             repeat: Infinity,
+          }}
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0 10px 30px rgba(255, 140, 0, 0.5)"
           }}
         >
           <LuDownload size={18} />

@@ -1,29 +1,31 @@
 // src/components/SkillsSection.tsx
 import { FaPython, FaJava, FaJs, FaReact, FaNodeJs, FaGitAlt, FaDocker, FaFigma } from "react-icons/fa";
 import { SiTypescript, SiHtml5, SiCss3, SiTailwindcss, SiMysql, SiD3Dotjs, SiSupabase, SiCplusplus } from "react-icons/si";
+import type { TechStackItem } from "../types";
+
+const techStack: TechStackItem[] = [
+  { icon: <FaPython />, label: "Python" },
+  { icon: <FaJava />, label: "Java" },
+  { icon: <SiCplusplus />, label: "C++" },
+  { icon: <SiMysql />, label: "MySQL" },
+  { icon: <FaJs />, label: "JavaScript" },
+  { icon: <SiTypescript />, label: "TypeScript" },
+  { icon: <SiHtml5 />, label: "HTML" },
+  { icon: <SiCss3 />, label: "CSS" },
+  { icon: <FaReact />, label: "React" },
+  { icon: <SiTailwindcss />, label: "Tailwind" },
+  { icon: <FaNodeJs />, label: "Node.js" },
+  { icon: <SiD3Dotjs />, label: "D3.js" },
+  { icon: <FaFigma />, label: "Figma" },
+  { icon: <FaDocker />, label: "Docker" },
+  { icon: <SiSupabase />, label: "Supabase" },
+  { icon: <FaGitAlt />, label: "Git" }
+];
 
 export default function SkillsSection() {
-  const techStack = [
-    { icon: <FaPython />, label: "Python" },
-    { icon: <FaJava />, label: "Java" },
-    { icon: <SiCplusplus />, label: "C++" },
-    { icon: <SiMysql />, label: "MySQL" },
-    { icon: <FaJs />, label: "JavaScript" },
-    { icon: <SiTypescript />, label: "TypeScript" },
-    { icon: <SiHtml5 />, label: "HTML" },
-    { icon: <SiCss3 />, label: "CSS" },
-    { icon: <FaReact />, label: "React" },
-    { icon: <SiTailwindcss />, label: "Tailwind" },
-    { icon: <FaNodeJs />, label: "Node.js" },
-    { icon: <SiD3Dotjs />, label: "D3.js" },
-    { icon: <FaFigma />, label: "Figma" },
-    { icon: <FaDocker />, label: "Docker" },
-    { icon: <SiSupabase />, label: "Supabase" },
-    { icon: <FaGitAlt />, label: "Git" }
-  ];
 
   return (
-    <section className="bg-bg rounded-2xl border 
+    <section className="bg-bg/60 rounded-2xl border 
                         border-text/15 shadow-lg
                         p-6 sm:p-8 w-full mx-auto max-w-2xl lg:mx-0 lg:max-w-none xl:max-h-[384px] ">
       {/* Section title */}

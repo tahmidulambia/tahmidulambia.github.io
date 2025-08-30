@@ -3,7 +3,7 @@ import ShimmerButton from "../components/ShimmerButton.tsx";
 
 export default function Landing() {
   return (
-    <section id="home" className="bg-bg text-text">
+    <section id="home" className="text-text">
       <div className="max-w-screen-2xl mx-auto px-8 min-h-[100svh] pt-32 pb-16 grid gap-6 items-center lg:grid-cols-2 lg:gap-10 ">
         {/* Photo */}
         <div className="flex justify-center lg:order-2">
@@ -17,6 +17,7 @@ export default function Landing() {
                 md:size-[min(20rem,50vw)]
                 lg:size-[28rem]
                 xl:size-[32rem]"
+              loading="lazy"
             />
           </div>
         </div>

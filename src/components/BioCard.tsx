@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function BioCard() {
   return (
     <div
-      className="relative bg-bg text-text p-6 shadow-lg lg:sticky 
+      className="relative bg-bg/60 text-text p-6 shadow-lg lg:sticky 
             rounded-2xl border border-text/15 w-full mx-auto max-w-md" 
     >
       {/* Profile Image - only overlaps in mobile */}
@@ -20,6 +20,7 @@ export default function BioCard() {
             border-3 border-accent=
             lg:border-0
           "
+          loading="lazy"
         />
       </div>
 
