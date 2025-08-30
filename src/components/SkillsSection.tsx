@@ -24,7 +24,7 @@ export default function SkillsSection() {
 
   return (
     <section className="bg-bg rounded-2xl border 
-                        border-text/15 
+                        border-text/15 shadow-lg
                         p-6 sm:p-8 w-full mx-auto max-w-2xl lg:mx-0 lg:max-w-none xl:max-h-[384px] ">
       {/* Section title */}
       <h3 className="font-display font-bold text-xl sm:text-2xl 3xl:text-3xl mb-8 text-center">

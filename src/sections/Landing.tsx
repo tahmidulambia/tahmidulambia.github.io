@@ -1,24 +1,22 @@
 // src/sections/Landing.tsx
+import ShimmerButton from "../components/ShimmerButton.tsx";
+
 export default function Landing() {
   return (
     <section id="home" className="bg-bg text-text">
-      {/* Full viewport height; extra top padding; centers content.
-         Scales up spacing on xl/2xl so the hero breathes on desktops. */}
       <div className="max-w-screen-2xl mx-auto px-8 min-h-[100svh] pt-32 pb-16 grid gap-6 items-center lg:grid-cols-2 lg:gap-10 ">
-        {/* Photo (top on mobile, right on desktop) */}
+        {/* Photo */}
         <div className="flex justify-center lg:order-2">
           <div className="relative rounded-full border-4 xl:border-[6px] 2xl:border-8 border-accent p-2">
             <img
               src="/src/assets/personal-picture.jpg"
               alt="Portrait of Tahmidul Ambia"
-              className="
-                block rounded-full object-cover
+              className="block rounded-full object-cover
                 size-[min(16rem,60vw)]
                 sm:size-[min(18rem,55vw)]
                 md:size-[min(20rem,50vw)]
                 lg:size-[28rem]
-                xl:size-[32rem]
-              "
+                xl:size-[32rem]"
             />
           </div>
         </div>
@@ -41,32 +39,13 @@ export default function Landing() {
                          text-sm sm:text-base xl:text-lg 2xl:text-xl
                          max-w-prose xl:max-w-[65ch] mx-auto lg:mx-0">
             I build reliable and impactful AI powered software across the stack. 
-            If you're looking to hire a self-starter with a strong classical foundation, explore more below!          </p>
+            If you're looking to hire a self-starter with a strong classical foundation, explore more below!
+          </p>
 
-          {/* CTAs: row on all sizes; scale paddings + font on xl/2xl */}
-          <div className="mt-8 flex flex-row gap-3 justify-center lg:justify-start">
-            <a
-              href="#about"
-              className="font-body font-[600] inline-flex items-center justify-center rounded-lg
-                         px-5 py-3 text-base
-                         xl:px-6 xl:py-3.5 xl:text-lg
-                         2xl:px-7 2xl:py-4 2xl:text-xl
-                         bg-accent text-bg hover:bg-hover transition-colors"
-            >
-              About Me
-            </a>
-          
-            <a
-              href="#projects"
-              className="font-body font-[600] inline-flex items-center justify-center rounded-lg
-                         px-5 py-3 text-base
-                         xl:px-6 xl:py-3.5 xl:text-lg
-                         2xl:px-7 2xl:py-4 2xl:text-xl
-                         border border-accent text-accent hover:text-white hover:bg-hover transition-colors"
-            >
-              View Projects
-            </a>
-          </div>
+          {/* CTAs */}
+          <div className="mt-8 flex flex-row gap-4 justify-center lg:justify-start">
+            <ShimmerButton href="#about" text="About me" />
+            <ShimmerButton href="#projects" text="View Projects" /></div>
         </div>
       </div>
     </section>

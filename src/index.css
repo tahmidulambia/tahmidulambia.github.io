@@ -11,8 +11,8 @@
 
 
   /* Light mode colors */
-  --color-bg: oklch(1 0 0);        
-  --color-bg-light: hsl(227, 35%, 21%);
+  --color-bg: hsl(0, 0%, 90%);        
+  --color-bg-light: hsl(0, 0%, 80%);        
   --color-text: oklch(0.1 0 0);      
   --color-accent: oklch(0.75 0.2 65);
   --color-hover: oklch(0.8 0.25 75); 
@@ -23,10 +23,11 @@
   :root {
     /* Dark mode colors from UI kit */
     --color-bg: hsl(0, 0%, 7%);        /* main background */
+    --color-bg-light: hsl(0, 0%, 20%);  /* lighter gray for cards/sections */
     --color-text: hsl(0, 0%, 100%);      /* text stays white */
-    --color-accent: hsl(32, 93%, 50%);    /* main accent orange */
+    --color-accent: hsl(28, 93%, 50%);    /* main accent orange */
     --color-hover: hsl(27, 93%, 50%);     /* hover accent */
-    --color-bg-light: hsl(0, 0%, 15%);  /* lighter gray for cards/sections */
+    
   }
 }
 

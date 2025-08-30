@@ -112,7 +112,7 @@ const Navbar = () => {
         {/* Typing Name */}
         <h1
           className="
-            text-2xl md:text-3xl ml-1 font-brand font-bold text-white
+            text-2xl md:text-3xl ml-1 font-brand font-bold text-text
             lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2
           "
         >

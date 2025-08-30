@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
@@ -9,37 +9,30 @@ export default function Projects() {
 
 const projects = [
     {
-      image: "/src/assets/personal-picture.jpg",
-      title: "Project One",
-      description: "An interactive choropleth map visualizing Education and Financial data across the US.",
-      technologies: ["HTML", "CSS", "JS", "d3.js"],
-      demoLink: "https://yourdemo.com",
-      codeLink: "https://github.com/yourrepo",
+      image: "/src/assets/Choropleth-project.png",
+      title: "US Data Choropleth Map",
+      description: "An interactive choropleth map visualizing Education and Financial data across all US states and counties.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "d3.js", "TopoJSON"],
+      demoLink: "https://raw.githack.com/TAmbiaT/US-Data-Choropleth-Map/main/index.html",
+      codeLink: "https://github.com/TAmbiaT/US-Data-Choropleth-Map",
     },
     {
-      image: "/src/assets/personal-picture.jpg",
-      title: "Project Two",
-      description: "Another project with a different focus.",
-      technologies: ["Node.js", "Express", "MongoDB"],
-      demoLink: "https://yourdemo.com",
-      codeLink: "https://github.com/yourrepo",
+      image: "/src/assets/Algorithm-Calc-project.png",
+      title: "Algorithm Playground",
+      description: "Interactive calculator implementing Min-Cost Triangulation and Max Flow algorithms with real-time computation and modern UI.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Vercel"],
+      demoLink: "https://flow-triangulation-calculator.vercel.app/",
+      codeLink: "https://github.com/TAmbiaT/algorithm-practice-java",
     },
     {
-      image: "/src/assets/personal-picture.jpg",
-      title: "Project Three",
-      description: "Another project with a different focus.",
-      technologies: ["Node.js", "Express", "MongoDB"],
-      demoLink: "https://yourdemo.com",
-      codeLink: "https://github.com/yourrepo",
+      image: "/src/assets/Valentines-project.png",
+      title: "Valentines Spending Analysis",
+      description: "Data visualizations exploring Valentine's Day spending trends across demographics. Reveals surprising consumer behavior patterns from 2010-2022.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "d3.js", "CSV"],
+      demoLink: "https://raw.githack.com/TAmbiaT/Valentines-Spending-Visualization/main/index.html",
+      codeLink: "https://github.com/TAmbiaT/Valentines-Spending-Visualization",
     }, 
-    {
-      image: "/src/assets/personal-picture.jpg",
-      title: "Project Four",
-      description: "Another project with a different focus.",
-      technologies: ["Node.js", "Express", "MongoDB"],
-      demoLink: "https://yourdemo.com",
-      codeLink: "https://github.com/yourrepo",
-    },
+    
     // ... more projects
   ];
   // Track scroll position → update activeIndex

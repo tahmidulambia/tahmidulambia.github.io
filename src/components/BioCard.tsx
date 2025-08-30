@@ -64,7 +64,7 @@ export default function BioCard() {
               rel="noopener noreferrer"
               className= "hover:text-accent transition-colors"
             >
-              <FaGithub size={22} />
+              <FaGithub size={24} />
             </a>
             <a
               href="https://linkedin.com/in/tahmidul-ambia"
@@ -72,13 +72,14 @@ export default function BioCard() {
               rel="noopener noreferrer"
               className="hover:text-accent transition-colors"
             >
-              <FaLinkedin size={22} />
+              <FaLinkedin size={24} />
             </a>
           </div>
           <a
             href="/resume.pdf"
             download
-            className="flex items-center gap-2 font-body px-3 py-2 rounded-md border border-accent text-accent hover:bg-accent hover:text-bg transition-colors"
+            className="flex items-center gap-2 font-body px-3 py-2 rounded-md border border-accent text-accent 
+                      hover:bg-accent hover:text-bg transition-all  hover:font-[500] duration-400"
           >
             <LuDownload size={18} />
             Resume

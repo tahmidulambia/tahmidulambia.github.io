@@ -26,24 +26,38 @@ export default function About() {
             
             {/* About Me section */}
             <article className="bg-bg/80 backdrop-blur-sm ">
-              <h2 className="font-display text-center font-bold text-2xl sm:text-3xl lg:text-4xl mb-4 mt-6 lg:mt-2 lg:text-start">
+              <h2 className="font-display text-center font-bold text-2xl sm:text-3xl lg:text-4xl mb-4 mt-6 lg:mt-0 lg:text-start">
                 About Me
               </h2>
               <p
-                className="font-body text-sm sm:text-base xl:text-lg 2xl:text-xl text-text/80
-                          leading-relaxed tracking-wide 
-                          max-w-prose"
+                className="font-body text-sm sm:text-base lg:text-lg  2xl:xl text-text/80
+                          leading-relaxed tracking-wide text-center lg:text-left
+                          max-w-[95%]"
               >
-                I am a <strong>recent Cornell Grad</strong> software developer passionate about building
-                impactful and reliable applications. My experience spans <strong>frontend</strong> development 
-                with HTML, CSS, JavaScript, TypeScript, React, and Tailwind CSS, and <strong>backend</strong> 
-                work with SQL, Express.js, and MySQL2.  
-                I’ve also worked on projects involving <strong>machine learning</strong> and 
-                <strong> AI development</strong>, applying these technologies to solve real-world 
-                challenges. I enjoy designing intuitive <strong>UI</strong> and creating systems 
-                that are both performant and maintainable.
-                <br /><br />
-                I am actively seeking opportunities to apply my skills in a dynamic team environment where I can contribute to meaningful projects and continue to grow as a developer.
+                I recently graduated from <strong>Cornell University</strong> with my 
+                <strong> Bachelor’s degree in Computer Science</strong>, where I developed a strong foundation in 
+                <strong> object-oriented programming</strong> and <strong> data structures &amp; algorithms</strong>. 
+                I’ve applied these fundamentals through both independent and collaborative projects, gaining practical 
+                experience in <strong> frontend development</strong>, <strong> backend systems</strong>, and building 
+                <strong> AI-powered solutions</strong>.
+                
+                <span className = "block mt-3">
+                I currently work as a <strong> Coding Instructor</strong> at <strong> KTBYTE</strong>, where I 
+                teach students <strong>Java programming</strong> fundamentals and guide them through 
+                <strong> creative coding projects</strong>. This experience has allowed me to strengthen both my 
+                <strong> technical communication</strong> and <strong> leadership skills</strong>. Outside of teaching, 
+                I’ve been deeply engaged with the rapidly evolving world of <strong> artificial intelligence</strong>. 
+                I enjoy exploring <strong> emerging tools</strong> and experimenting with ways to integrate them into 
+                <strong> real-world applications</strong>. My goal is to combine these technologies with my 
+                <strong> CS background</strong> to build software that is not only <strong> innovative</strong> but also 
+                <strong> scalable</strong>, <strong> secure</strong>, and <strong> impactful</strong>.
+                </span>
+                
+                <span className = "block mt-3">
+                I am eager to bring these <strong>skills and experiences</strong> into a 
+                <strong> dynamic team environment</strong> where I can contribute to 
+                <strong> meaningful projects</strong> while continuing to learn and grow as a developer.
+                </span>
               </p>
             </article>
 
@@ -61,3 +75,5 @@ export default function About() {
     </section>
   );
 }
+
+
