@@ -1,5 +1,5 @@
 // src/components/Navbar.tsx
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { LuDownload } from "react-icons/lu";
 import { motion } from "framer-motion";
 
