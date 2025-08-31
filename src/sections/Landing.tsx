@@ -9,7 +9,7 @@ export default function Landing() {
         <div className="flex justify-center lg:order-2">
           <div className="relative rounded-full border-4 xl:border-[6px] 2xl:border-8 border-accent p-2">
             <img
-              src="/src/assets/personal-picture.jpg"
+              src="/src/assets/personal-pic.jpg"
               alt="Portrait of Tahmidul Ambia"
               className="block rounded-full object-cover
                 size-[min(16rem,60vw)]

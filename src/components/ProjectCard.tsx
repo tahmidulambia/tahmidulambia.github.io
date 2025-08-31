@@ -19,7 +19,7 @@ export default function ProjectCard({
       w-full max-w-sm sm:max-w-lg md:max-w-2xl h-full min-h-[28rem]
     ">
       {/* Project image */}
-      <div className="relative h-50 sm:h-60 md:h-70 w-full rounded-2xl overflow-hidden">
+      <div className="relative h-50 sm:h-60 md:h-75 w-full rounded-2xl overflow-hidden">
         <img 
           src={image} 
           alt={title} 

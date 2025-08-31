@@ -12,7 +12,7 @@ export default function BioCard() {
       {/* Profile Image - only overlaps in mobile */}
       <div className="absolute -top-12 left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:top-0 flex justify-center">
         <img
-          src="/src/assets/personal-picture.jpg"
+          src="/src/assets/headshot.png"
           alt="Tahmidul Ambia"
           className="
             w-32 h-32 sm:w-38 sm:h-38
@@ -48,7 +48,7 @@ export default function BioCard() {
           <div className="flex items-center gap-3">
             <LuMail size={18} className="text-accent" />
             <a
-              href="mailto:ta278@cornell.edu"
+              href="mailto:ta278@cornell.edu?subject=Portfolio%20Inquiry&body=Hi%20Tahmidul,%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards,"
               className="font-body underline hover:text-hover transition-colors"
             >
               ta278@cornell.edu
@@ -80,7 +80,7 @@ export default function BioCard() {
             href="/resume.pdf"
             download
             className="flex items-center gap-2 font-body px-3 py-2 rounded-md border border-accent text-accent 
-                      hover:bg-accent hover:text-bg transition-all  hover:font-[500] duration-400"
+                      hover:bg-accent hover:text-bg transition-all hover:font-[500] duration-400 hover:scale-110"
           >
             <LuDownload size={18} />
             Resume

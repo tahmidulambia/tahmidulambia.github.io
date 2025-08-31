@@ -13,7 +13,7 @@
   --font-brand: "Playfair Display", sans-serif;
 
   /* Light mode color palette */
-  --color-bg: hsl(0, 0%, 90%);        
+  --color-bg: hsl(212, 51%, 93%);  /* Very light cool blue-gray */
   --color-bg-light: hsl(0, 0%, 80%);        
   --color-text: oklch(0.1 0 0);      
   --color-accent: oklch(0.75 0.2 65);
@@ -24,21 +24,22 @@
 /* Dark mode color palette */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: hsl(0, 0%, 7%);        /* main background */
-    --color-bg-light: hsl(0, 0%, 20%);  /* lighter gray for cards/sections */
-    --color-text: hsl(0, 0%, 100%);      /* text stays white */
-    --color-accent: hsl(28, 93%, 50%);    /* main accent orange */
-    --color-hover: hsl(27, 93%, 50%);     /* hover accent */
+    --color-bg: hsl(0, 0%, 7%);       
+    --color-bg-light: hsl(0, 0%, 20%);  
+    --color-text: hsl(0, 0%, 100%);     
+    --color-accent: hsl(28, 93%, 50%);  
+    --color-hover: hsl(27, 93%, 50%);   
   }
   
   /* Dark mode background with very subtle orange patches on sides */
   body {
     background: 
-      radial-gradient(circle at 10% 20%, hsl(28, 93%, 5%) 0%, transparent 30%),
+      radial-gradient(circle at 10% 20%, hsl(28, 93%, 12%) 0%, transparent 30%),
       radial-gradient(circle at 90% 80%, hsl(28, 93%, 5%) 0%, transparent 30%),
-      radial-gradient(circle at 5% 70%, hsl(28, 93%, 6%) 0%, transparent 25%),
-      radial-gradient(circle at 95% 30%, hsl(28, 93%, 6%) 0%, transparent 25%),
-      radial-gradient(circle at 8% 92%, hsl(28, 93%, 6%) 0%, transparent 20%),
+      radial-gradient(circle at 5% 70%, hsl(28, 93%, 7%) 0%, transparent 25%),
+      radial-gradient(circle at 95% 30%, hsl(28, 93%, 7%) 0%, transparent 25%),
+      radial-gradient(circle at 8% 92%, hsl(28, 93%, 7%) 0%, transparent 20%),
+      radial-gradient(circle at 75% 65%, hsl(28, 93%, 11%) 0%, transparent 35%),
       hsl(0, 0%, 7%);
   }
 }

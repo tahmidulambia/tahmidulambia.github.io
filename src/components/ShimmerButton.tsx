@@ -5,7 +5,7 @@ export default function ShimmerButton({ href, text }: { href: string; text: stri
       className="
         relative inline-flex items-center justify-center font-body font-[600]
         px-6 py-3 text-lg rounded-lg overflow-hidden
-        bg-bg text-text border border-accent
+        bg-bg/80 text-text border border-accent
         transition-all duration-500 ease-out
         hover:scale-105 hover:shadow-[0_0_30px_rgba(255,140,0,0.6)]
         before:content-[''] before:absolute before:w-[250%] before:h-[250%]
