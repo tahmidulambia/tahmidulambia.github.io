@@ -17,7 +17,7 @@ export default function BioCard() {
           className="
             w-32 h-32 sm:w-38 sm:h-38
             object-cover rounded-full
-            border-3 border-accent=
+            border-3 border-white/80
             lg:border-0
           "
           loading="lazy"
@@ -63,7 +63,7 @@ export default function BioCard() {
               href="https://github.com/tambiat"
               target="_blank"
               rel="noopener noreferrer"
-              className= "hover:text-accent transition-colors"
+              className="hover:text-accent transition-all duration-1400 ease-in-out hover:rotate-y-360 hover:scale-125"
             >
               <FaGithub size={24} />
             </a>
@@ -71,7 +71,7 @@ export default function BioCard() {
               href="https://linkedin.com/in/tahmidul-ambia"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-accent transition-colors"
+              className="hover:text-accent transition-all duration-1400 ease-in-out hover:rotate-y-360 hover:scale-125"
             >
               <FaLinkedin size={24} />
             </a>

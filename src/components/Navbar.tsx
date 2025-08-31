@@ -190,16 +190,19 @@ const Navbar = () => {
               d="M4 7h16"
               animate={menuOpen ? { d: "M6 6L18 18" } : { d: "M4 7h16" }}
               transition={{ duration: 0.3 }}
+              initial={{ d: "M4 7h16" }}
             />
             <motion.path
               d="M4 12h16"
               animate={menuOpen ? { opacity: 0 } : { opacity: 1 }}
               transition={{ duration: 0.1 }}
+              initial={{ opacity: 1 }}
             />
             <motion.path
               d="M4 17h16"
               animate={menuOpen ? { d: "M6 18L18 6" } : { d: "M4 17h16" }}
               transition={{ duration: 0.3 }}
+              initial={{ d: "M4 17h16" }}
             />
           </motion.svg>
         </button>
@@ -214,7 +217,7 @@ const Navbar = () => {
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.2 }}
           className="lg:hidden flex flex-col absolute right-8 mt-[-1rem] space-y-2 
-                     bg-bg-light border border-text/20 rounded-lg shadow-2xl"
+                     bg-bg/95 backdrop-blur-sm border border-text/30 rounded-lg shadow-2xl"
         >
           {links.map((link) => {
             const id = link.toLowerCase();
@@ -223,11 +226,11 @@ const Navbar = () => {
                 <a
                   href={`#${id}`}
                   onClick={() => setMenuOpen(false)}
-                  className={`block px-4 py-3 transition-colors relative
+                  className={`block px-4 py-3 transition-all duration-300 relative
                     ${
                       active === id
-                        ? "text-white text-center bg-[rgb(48,54,78)] rounded-lg shadow-inner-md"
-                        : "text-text text-center hover:text-accent"
+                        ? "text-text text-center rounded-lg shadow-lg bg-accent/15"
+                        : "text-text text-center hover:text-accent hover:bg-bg-light/50"
                     }
                   `}
                 >
