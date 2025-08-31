@@ -11,28 +11,28 @@ export default function Projects() {
 // Project data - could be moved to a separate file if it grows larger
 const projects: Project[] = [
   {
-    image: "/src/assets/Choropleth-project.png",
+    image: "/Choropleth-project.png",
     title: "US Data Choropleth Map",
     description: "An interactive choropleth map visualizing Education and Financial data across all US states and counties.",
     technologies: ["HTML5", "CSS3", "JavaScript", "d3.js", "TopoJSON"],
-    demoLink: "https://raw.githack.com/TAmbiaT/US-Data-Choropleth-Map/main/index.html",
-    codeLink: "https://github.com/TAmbiaT/US-Data-Choropleth-Map",
+    demoLink: "https://raw.githack.com/tahmidulambia/US-Data-Choropleth-Map/main/index.html",
+    codeLink: "https://github.com/tahmidulambia/US-Data-Choropleth-Map",
   },
   {
-    image: "/src/assets/Algorithm-Calc-project.png",
+    image: "/Algorithm-Calc-project.png",
     title: "Max Flow and Triangulation Calculator",
     description: "An interactive calculator implementing Min-Cost Triangulation and Max Flow algorithms with real-time computation and modern UI.",
     technologies: ["HTML5", "CSS3", "JavaScript", "Vercel"],
     demoLink: "https://flow-triangulation-calculator.vercel.app/",
-    codeLink: "https://github.com/TAmbiaT/algorithm-practice-java",
+    codeLink: "https://github.com/tahmidulambia/algorithm-practice-java",
   },
   {
-    image: "/src/assets/Valentines-project.png",
+    image: "/Valentines-project.png",
     title: "Valentines Spending Analysis",
     description: "Data visualizations exploring Valentine's Day spending trends across demographics. Reveals surprising consumer behavior patterns from 2010-2022.",
     technologies: ["HTML5", "CSS3", "JavaScript", "d3.js", "CSV"],
-    demoLink: "https://raw.githack.com/TAmbiaT/Valentines-Spending-Visualization/main/index.html",
-    codeLink: "https://github.com/TAmbiaT/Valentines-Spending-Visualization",
+    demoLink: "https://raw.githack.com/tahmidulambia/Valentines-Spending-Visualization/main/index.html",
+    codeLink: "https://github.com/tahmidulambia/Valentines-Spending-Visualization",
   },
 ];
   // Track scroll position → update activeIndex

@@ -133,8 +133,9 @@ const Navbar = () => {
 
         {/* Resume button) */}
         <motion.a
-          href="/resume.pdf"
-          download
+          href="/Ambia,Tahmidul Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden lg:flex px-5 py-2 rounded-md font-body text-lg text-white
                      bg-gradient-to-r from-orange-500 via-orange-600 to-orange-400
                      bg-[length:300%_100%]

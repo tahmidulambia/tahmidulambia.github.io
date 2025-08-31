@@ -12,7 +12,7 @@ export default function BioCard() {
       {/* Profile Image - only overlaps in mobile */}
       <div className="absolute -top-12 left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 lg:top-0 flex justify-center">
         <img
-          src="/src/assets/headshot.png"
+          src="/headshot.png"
           alt="Tahmidul Ambia"
           className="
             w-32 h-32 sm:w-38 sm:h-38
@@ -77,8 +77,9 @@ export default function BioCard() {
             </a>
           </div>
           <a
-            href="/resume.pdf"
-            download
+            href="/Ambia,Tahmidul Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 font-body px-3 py-2 rounded-md border border-accent text-accent 
                       hover:bg-accent hover:text-bg transition-all hover:font-[500] duration-400 hover:scale-110"
           >
