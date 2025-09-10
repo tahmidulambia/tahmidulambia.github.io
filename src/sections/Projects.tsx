@@ -11,6 +11,14 @@ export default function Projects() {
 // Project data - could be moved to a separate file if it grows larger
 const projects: Project[] = [
   {
+    image: "/Fake-News-project.png",
+    title: "Fake News Detection Web App",
+    description: "A machine learning-powered web application that classifies news articles as real or fake using multiple ML models including BERT, Logistic Regression, Random Forest, and Gradient Boosting.",
+    technologies: ["Python", "Flask", "scikit-learn", "Transformers", "BERT", "HTML5", "CSS3", "JavaScript", "Bootstrap", "Docker"],
+    demoLink: "https://huggingface.co/spaces/tahmidul159/Fake-News-Detector",
+    codeLink: "https://huggingface.co/spaces/tahmidul159/Fake-News-Detector/tree/main",
+  },
+  {
     image: "/Choropleth-project.png",
     title: "US Data Choropleth Map",
     description: "An interactive choropleth map visualizing Education and Financial data across all US states and counties.",
