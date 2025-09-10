@@ -1,24 +1,24 @@
 // src/components/SkillsSection.tsx
-import { FaPython, FaJava, FaJs, FaReact, FaNodeJs, FaGitAlt, FaDocker, FaFigma } from "react-icons/fa";
-import { SiTypescript, SiHtml5, SiCss3, SiTailwindcss, SiMysql, SiD3Dotjs, SiSupabase, SiCplusplus, SiFlask, SiScikitlearn, SiPytorch, SiHuggingface, SiBootstrap, SiJupyter, SiPandas, SiNumpy } from "react-icons/si";
+import { FaDocker, FaFigma, FaJava } from "react-icons/fa";
+import { SiPython, SiCplusplus, SiJavascript, SiTypescript, SiHtml5, SiCss3, SiReact, SiTailwindcss, SiBootstrap, SiD3Dotjs, SiNodedotjs, SiFlask, SiMysql, SiSupabase, SiPytorch, SiScikitlearn, SiHuggingface, SiPandas, SiNumpy, SiJupyter, SiGit } from "react-icons/si";
 import type { TechStackItem } from "../types";
 
 const techStack: TechStackItem[] = [
   // Programming Languages
-  { icon: <FaPython />, label: "Python" },
+  { icon: <SiPython />, label: "Python" },
   { icon: <FaJava />, label: "Java" },
   { icon: <SiCplusplus />, label: "C++" },
-  { icon: <FaJs />, label: "JavaScript" },
+  { icon: <SiJavascript />, label: "JavaScript" },
   { icon: <SiTypescript />, label: "TypeScript" },
   // Frontend
   { icon: <SiHtml5 />, label: "HTML" },
   { icon: <SiCss3 />, label: "CSS" },
-  { icon: <FaReact />, label: "React" },
+  { icon: <SiReact />, label: "React" },
   { icon: <SiTailwindcss />, label: "Tailwind" },
   { icon: <SiBootstrap />, label: "Bootstrap" },
   { icon: <SiD3Dotjs />, label: "D3.js" },
   // Backend & Database
-  { icon: <FaNodeJs />, label: "Node.js" },
+  { icon: <SiNodedotjs />, label: "Node.js" },
   { icon: <SiFlask />, label: "Flask" },
   { icon: <SiMysql />, label: "MySQL" },
   { icon: <SiSupabase />, label: "Supabase" },
@@ -30,7 +30,7 @@ const techStack: TechStackItem[] = [
   { icon: <SiNumpy />, label: "NumPy" },
   { icon: <SiJupyter />, label: "Jupyter" },
   // Development Tools
-  { icon: <FaGitAlt />, label: "Git" },
+  { icon: <SiGit />, label: "Git" },
   { icon: <FaDocker />, label: "Docker" },
   { icon: <FaFigma />, label: "Figma" }
 ];
